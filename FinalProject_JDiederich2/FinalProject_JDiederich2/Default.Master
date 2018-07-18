@@ -1,0 +1,45 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="FinalProject_JDiederich2.Default" %>
+
+<%@ Register src="Header.ascx" tagname="Header" tagprefix="abc" %>
+<%@ Register src="Banner.ascx" tagname="Banner" tagprefix="abc" %>
+<%@ Register src="Footer.ascx" tagname="Footer" tagprefix="abc" %>
+
+<!DOCTYPE html>
+
+<html>
+    <head runat="server">
+        <title>Chippewa Valley Electric</title>
+        <asp:ContentPlaceHolder ID="head" runat="server" />
+        <link href="css/custom.css" rel="stylesheet" />
+        <link href="css/styles2.css" rel="stylesheet" />
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
+        <script src="JavaScript.js"></script>
+    </head>
+    <body>
+        <form id="form1" runat="server">
+            <header>
+                <abc:Header ID="abcHeader" runat="server" />
+            </header>
+            <div >
+                <abc:Banner ID="abcBanner" runat="server" />
+            </div>
+
+            <div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+            </div>
+            <div>
+                <asp:ContentPlaceHolder ID="RightContentPlaceHolder" runat="server" />
+            </div>
+            
+            <div>
+                <asp:ContentPlaceHolder ID="BottomContentPlaceHolder" runat="server" />
+            </div>
+    
+            <footer>
+                
+                <abc:Footer ID="abcFooter" runat="server" />  
+            </footer>
+        </form>
+        
+    </body>
+</html>

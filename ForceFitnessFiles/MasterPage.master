@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Force Fitness</title>
+    <link href="css/JediBlue.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder id="head" runat="server" />
+
+</head>
+<body>
+    <header>
+        <img src="images/Jedi_logo_blue.png" alt="Jedi Order Symbol" />
+        <h1>Force Fitness</h1>
+    </header>
+    <form id="form1" runat="server">
+        <nav>
+            <asp:Menu ID="MainNavigation" runat="server" DataSourceID="MainNavigationDS" Orientation="Horizontal" BorderStyle="NotSet" BackColor="#00CCFF" BorderColor="#0033CC" ForeColor="#0033CC">
+            </asp:Menu>
+        </nav>    
+        <main>
+            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server" />
+        
+        </main>
+    </form>
+    <footer>
+        <p><small>Copyright &copy; Force Fitness 2017 - Website by Jennifer Diederich</small></p>
+    </footer>
+    <asp:SiteMapDataSource ID="MainNavigationDS" runat="server" ShowStartingNode="False" />
+</body>
+</html>

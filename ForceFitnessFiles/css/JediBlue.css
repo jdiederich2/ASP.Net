@@ -1,0 +1,242 @@
+﻿body {
+    background-image: url('../images/GreyBackground_small.jpg');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header {
+	height: 200px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 10px;
+  width: 1090px;
+}
+
+header > img {
+	vertical-align:middle;
+  float: left;
+}
+
+header > h1 {
+	font-family: Helvetica, sans-serif;
+	font-size: 9.2em;
+	font-weight: 2em;
+  font-stretch: condensed;
+	margin-left: 30px;
+  margin-bottom: 0;
+	color: #fff;
+	text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #45e3ff, 0 0 30px #45e3ff, 0 0 40px #45e3ff, 0 0 50px #45e3ff, 0 0 75px #45e3ff;
+	letter-spacing: 5px;
+  display: inline;
+}
+
+
+main {
+	background: rgba(0, 98, 128, 0.8);
+	border-style: solid;
+	border-width: 1px;
+	border-color: #45e3ff;
+  color: #45e3ff;
+  font-family: Helvetica, sans-serif;
+  margin: 10px auto;
+  width: 1090px;
+  display: flex;
+}
+
+main a {
+  color: #fff;
+}
+
+.column-left > img {
+    border-radius: 5px;
+    border-color: #45e3ff;
+    border-style:solid;
+    border-width: 1px;
+    float: left;
+    margin: 20px 10px 0 15px;
+}
+
+.column-left > p, .column-right > p {
+    margin: 20px;
+  
+}
+
+blockquote {
+  border-top: 1px dashed #45e3ff;
+  border-bottom: 1px dashed #45e3ff;
+  padding: 10px 0;
+  margin: 20px 30px;
+  float: right;
+  font-size: 125%;
+  font-style: italic;
+  width: 35%;
+}
+
+
+footer {
+  background-color: rgba(0, 98, 128, 0.6);
+  /*background-color: rgba(71, 227, 255, 0.6);*/
+  border-color:#45e3ff;
+  border-width:1px;
+  border-style:solid; 
+  border-radius: 0 0 5px 5px;
+  padding: 1px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1090px;
+  text-align: center;
+  color: #45e3ff;
+}
+
+/*
+    Menu Styles
+*/
+
+nav {
+    margin: 10px auto;
+    width: 1090px;
+}
+
+#MainNavigation ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    #MainNavigation ul.level1 > li {
+        display: block;
+        float: left;
+    }
+
+        #MainNavigation ul.level1 > li > a {
+            margin: 10px 1px;
+        }
+
+    #MainNavigation ul.level1 a {
+        background-color: rgba(0, 98, 128, 0.6);
+        border-color: #45e3ff;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 5px;
+        text-align: center;
+        text-decoration: none;
+        font-family: Helvetica, sans-serif;
+        color: #45e3ff;
+        padding: 0 20px;
+        font-size: 125%;
+        display: block;
+    }
+
+        #MainNavigation ul.level1 a:hover {
+            background-color: #45e3ff;
+            border-color: rgba(0, 98, 128, 0.8);
+            border-width: 1px;
+            border-style: solid;
+            border-radius: 5px;
+            color: rgba(0, 98, 128, 0.8 );
+        }
+
+#MainNavigation li:hover ul {
+    display: block;
+    position: absolute;
+    margin-top: -10px;
+}
+
+#MainNavigation li:hover li {
+    float: none;
+}
+
+#MainNavigation li > ul {
+    display: none;
+}
+
+#MainNavigation ul.level2 a {
+    background-color: rgba(0, 98, 128, 0.8);
+    border-color: #45e3ff;
+    border-width: 1px;
+    border-style: Solid;
+    border-radius: 5px;
+    text-decoration: none;
+    font-family: Helvetica, sans-serif;
+    color: #45e3ff;
+    width: 150%;
+    text-align: center;
+    display: block;
+}
+
+/*
+* Create Account Styles
+*/
+
+#stats {
+    margin-left: 150px;
+    margin-bottom: 25px;
+}
+
+    #stats input {
+        background-color: rgba(0, 98, 128, 0.8);
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        color: #45e3ff;
+        padding: 2px;
+        width: 75px;
+    }
+
+        #stats input:focus {
+            background-color: #45e3ff;
+            color: rgba(0, 98, 128, 0.8);
+            outline: none;
+        }
+
+    #stats select {
+        background-color: rgba(0, 98, 128, 0.8);
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        border-color: #45e3ff;
+        color: #45e3ff;
+        padding: 2px;
+    }
+
+        #stats select:focus {
+            background-color: #45e3ff;
+            color: rgba(0, 98, 128, 0.8);
+            outline: none;
+        }
+
+    #stats span {
+        display: inline-block;
+        width: 200px;
+        text-align: right;
+    }
+
+
+#userInfo {
+    margin-left: 50px;
+    margin-bottom: 25px;
+}
+
+    #userInfo input {
+        background-color: rgba(0, 98, 128, 0.8);
+        border-style: solid;
+        border-radius: 5px;
+        border-width: 1px;
+        color: #45e3ff;
+        padding: 2px;
+        width: 125px;
+    }
+
+        #userInfo input:focus {
+            background-color: #45e3ff;
+            color: rgba(0, 98, 128, 0.8);
+            outline: none;
+        }
+
+    #userInfo span {
+        display: inline-block;
+        width: 150px;
+        text-align: right;
+    }
+

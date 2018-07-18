@@ -1,0 +1,64 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="AllianceBank_JDiederich2.Default" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Alliance Bank</title>
+    <asp:ContentPlaceHolder ID="head" runat="server" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link type="text/css" href="/CSS/Default.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet" />
+    <script src="JavaScript.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form1" runat="server">
+            <header>
+                <div id="header">
+                    <div id="header-top">
+                        <div id="logo">
+                            <asp:Image ID="Logo" runat="server" />
+                        </div>
+                        <h1>"Working Together For You"</h1>
+                        <div id="login">
+                            <h2>Member Login</h2>
+                            <asp:TextBox style="text-align: center; font-weight: 600;" class="login" ID="userName" runat="server" placeholder="User Name"></asp:TextBox>
+                            <asp:TextBox style="text-align: center; font-weight: 600;" class="login" ID="password" runat="server" placeholder="Password"></asp:TextBox>
+                        </div>
+                    </div>
+                    <div id="header-bottom">
+                        <div id="nav" >
+                            <asp:Menu id="MainNav" runat="server" DataSourceID="MainNavDS" Orientation="Horizontal" StaticEnableDefaultPopOutImage="False" ViewStateMode="Disabled"></asp:Menu>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <main>
+                <div class="mainContentHeading">
+                    <asp:ContentPlaceHolder ID="MainContentHeading" runat="server" />
+                </div>
+                <div class="mainContentLeft">
+                    <div class="locations">
+                        <h2>Alliance Bank Locations</h2>
+                        <div id="locations">
+                            <asp:Button class="buttons" ID="mondovi" runat="server" Text="Mondovi" />
+                            <asp:Button class="buttons" ID="gilmanton" runat="server" Text="Gilmanton" />
+                            <asp:Button class="buttons" ID="osseo" runat="server" Text="Osseo" />
+                            <asp:Button class="buttons" ID="cochrane" runat="server" Text="Cochrane" />
+                            <asp:Button class="buttons" ID="bluffSiding" runat="server" Text="Bluff Siding" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mainContentRight">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+                </div>
+            </main>
+        </form>
+        <footer>
+            <span id="copyRight">© 2017 Jennifer Diederich</span>
+        </footer>
+        <asp:SiteMapDataSource ID="MainNavDS" runat="server" ShowStartingNode="False" />
+    </div>
+</body>
+</html>

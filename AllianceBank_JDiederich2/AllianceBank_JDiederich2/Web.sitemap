@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="#" title="Level 1 Nav Link"  description="">
+      <siteMapNode url="Home/Default.aspx" title="Home"  description="The website home page" />
+        <siteMapNode url="Personal/Personal.aspx" title="Personal Banking"  description="Personal banking home page.">
+            <siteMapNode url="Personal/OnlineServices.aspx" title="Online Services"  description="Visit our online page for mobile, internet banking and online bill pay." />
+            <siteMapNode url="Lending.aspx" title="Lending"  description="Need a loan? Start here!" />
+        </siteMapNode>
+
+        <siteMapNode url="Business/Business.aspx" title="Business Banking"  description="Business services page.">
+            <siteMapNode url="Business/BusinessLending.aspx" title="Business Lending"  description="Need a loan? Start here!" />
+            <siteMapNode url="Business/BusinessOnlineServices.aspx" title="Business Online Services"  description="Visit our online page for mobile, internet banking and online bill pay." />
+        </siteMapNode>
+      
+        <siteMapNode url="ResourceCenter/ResourceCenter.aspx" title="Resource Center"  description="Looking for information? Try searching our resource center." />
+        <siteMapNode url="Contact/Contact.aspx" title="Contact"  description="Contact Alliance Bank." />
+        <siteMapNode url="AboutUs/About.aspx" title="About Us"  description="Learn about Alliance Bank." />
+    </siteMapNode>
+</siteMap>

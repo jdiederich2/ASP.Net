@@ -1,0 +1,39 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+using System.Web.UI;
+using System.Web.UI.WebControls;
+
+namespace FinalProject_JDiederich2
+{
+    public partial class WebForm6 : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+  
+
+        }
+
+
+
+        protected void btnSubmit_OnClick(object sender, EventArgs e)
+        {
+            ClearFields();
+        }
+
+
+
+        private void ClearFields()
+        {
+           
+            firstName.Text = "";
+            lastName.Text = "";
+            email.Text = "";
+            confirmEmail.Text = "";
+            dlSubject.SelectedIndex = -1;
+            message.Text = "";
+        }
+    }
+}
